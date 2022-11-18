@@ -1,5 +1,7 @@
-import NotificationButton from '../NotificationButton'
-import './styles.css'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import NotificationButton from '../NotificationButton';
+import './styles.css';
 
 function SalesCard() {
     return (
@@ -7,10 +9,20 @@ function SalesCard() {
             <h2 className="sismeta-sales-tittle">Vendas</h2>
             <div>
                 <div className="sismeta-form-control-container">
-                    <input className="sismeta-form-control" type="text" />
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="sismeta-form-control"
+                        dateFormat="dd/MM/yyyy"
+                    />
                 </div>
                 <div className="sismeta-form-control-container">
-                    <input className="sismeta-form-control" type="text" />
+                    <DatePicker
+                        selected={new Date()}
+                        onChange={(date: Date) => { }}
+                        className="sismeta-form-control"
+                        dateFormat="dd/MM/yyyy"
+                    />
                 </div>
             </div>
 

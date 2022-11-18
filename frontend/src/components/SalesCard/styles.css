@@ -1,0 +1,94 @@
+.sismeta-card {
+    border-radius: 10px;
+    background-color: #283142;
+    padding: 30px 10px;
+}
+
+.sismeta-sales-tittle {
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sismeta-form-control {
+    height: 46px;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    width: 100%;
+    color: #9AAABE;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.sismeta-form-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.sismeta-tabela-container {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.sismeta-tabela-container thead {
+    height: 55px;
+    font-size: 16px;
+    color: #E9E9E9;
+    font-weight: 700;
+}
+
+.sismeta-tabela-container tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+}
+
+.sismeta-tabela-container tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+.sismeta-tabela-container tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.sismeta-tabela-container tbody tr:hover>th {
+    background-color: #384459;
+}
+
+.sismeta-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.show-576 {
+    display: none;
+}
+
+.show-992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show-576 {
+        display: table-cell;
+    }
+    .sismeta-card {
+        padding: 35px;
+    }
+    .sismeta-tabela-container tbody tr {
+        height: 55px;
+    }
+    .sismeta-tabela-container tbody {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .show-992 {
+        display: table-cell;
+    }
+}
